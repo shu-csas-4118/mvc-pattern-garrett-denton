@@ -16,14 +16,20 @@ public class StudentView {
 	}
 	
 	public void setStudentDetails(Student student) {
-	
+		
 	}
 	
 	public void printStudentDetails() {
-		if (this.student == null) throw new IllegalArgumentException("student");		
-
+		if(this.student == null) throw new IllegalArgumentException("student");
+		
 		System.out.println("Student's first name is " + this.student.getFirstName());
 		System.out.println("Student's last name is " + this.student.getLastName());
+		System.out.println("Student's email is " + this.student.getEmail());
 		System.out.println("Student's id number is " + this.student.getIdNumber());
+		System.out.println("Student's courses are: ");
+		System.out.println();
+		this.student.getCourses();
+		System.out.println();
 	}
+
 }

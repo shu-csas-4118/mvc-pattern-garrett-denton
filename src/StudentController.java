@@ -1,7 +1,7 @@
 
 public class StudentController {
 	private StudentView studentView;
-	private Student	student;
+	private Student student;
 	
 	public StudentController(Student student, StudentView studentView) {
 		this.student = student;
@@ -11,4 +11,5 @@ public class StudentController {
 	public void printStudentDetails() {
 		this.studentView.printStudentDetails(this.student);
 	}
+
 }
